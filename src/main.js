@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import App from './App'
+import hljs from 'highlight.js'
 
 Vue.config.productionTip = false
+
+Vue.prototype.hljs = hljs
 
 import {
   Select,
@@ -11,7 +14,10 @@ import {
   Form,
   FormItem,
   Input,
-  Slider
+  Slider,
+  Table,
+  TableColumn,
+  Card
 } from 'element-ui'
 Vue.use(Row)
 Vue.use(Col)
@@ -22,6 +28,9 @@ Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
 Vue.use(Slider)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Card)
 
 /* eslint-disable no-new */
 new Vue({

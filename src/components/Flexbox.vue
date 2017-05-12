@@ -339,7 +339,7 @@
             flex容器的剩余空间长度为：600-200-50-50=300px，所以最终a,b,c的长度分别为：<br>
             a: 50+(300/4)=200px<br>
             b: 50+(300/4*1)=125px<br>
-            a: 50+(300/4*3)=275px
+            c: 50+(300/4*3)=275px
           </p>
         </div>
         <el-row style="margin:25px auto 0;width:616px;">
@@ -442,12 +442,6 @@
             label="描述">
           </el-table-column>
         </el-table>
-        <el-row style="margin:25px auto 0;width:629px;">
-          <el-card :body-style="{ padding: '0px' }">
-            <img src="~@/assets/images/flex22.png" class="image">
-            <p class="img-des">flex-basis 控制元素的默认尺寸，然后再由其他 Flexbox 属性控制，可以覆盖 width 属性</p>
-          </el-card>
-        </el-row>
         <el-row style="margin:25px auto 0;width:420px;">
           <el-card :body-style="{ padding: '0px' }">
             <img src="~@/assets/images/flex23.png" class="image">
@@ -640,11 +634,11 @@ export default {
   <li>c</li>
 </ul>`,
       flex_shrink_code_css: `
-.flex{display:flex;width:600px;margin:0;padding:0;list-style:none;}
-.flex li {text-align:center;height:100px;}
-.flex li:nth-child(1){width:200px;background-color:green;}
-.flex li:nth-child(2){flex-grow:1;width:50px;background-color:yellow;}
-.flex li:nth-child(3){flex-grow:3;width:50px;background-color:red;}`
+.flex{display:-webkit-flex;display:flex;width:400px;margin:0;padding:0;list-style:none;}
+.flex li{width:200px;}
+.flex li:nth-child(1){background:#888;}
+.flex li:nth-child(2){background:#ccc;}
+.flex li:nth-child(3){-webkit-flex-shrink:3;flex-shrink:3;background:#aaa;}`
     }
   },
   mounted () {

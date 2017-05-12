@@ -1,6 +1,10 @@
 # flexbox
 
-> A Vue.js project
+> flexbox 工具
+
+## Example
+
+![flexbox](https://raw.githubusercontent.com/SirM2z/assets/master/image/flexbox.gif)
 
 ## Build Setup
 

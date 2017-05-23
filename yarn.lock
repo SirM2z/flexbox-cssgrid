@@ -4398,6 +4398,10 @@ vue-loader@^11.3.4:
     vue-style-loader "^2.0.0"
     vue-template-es2015-compiler "^1.2.2"
 
+vue-router@^2.5.3:
+  version "2.5.3"
+  resolved "http://registry.npm.taobao.org/vue-router/download/vue-router-2.5.3.tgz#073783f564b6aece6c8a59c63e298dc2aabfb51b"
+
 vue-style-loader@^2.0.0, vue-style-loader@^2.0.5:
   version "2.0.5"
   resolved "http://registry.npm.taobao.org/vue-style-loader/download/vue-style-loader-2.0.5.tgz#f0efac992febe3f12e493e334edb13cd235a3d22"

@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import router from './router'
 import App from './App'
 import hljs from 'highlight.js'
 
@@ -32,8 +33,13 @@ Vue.use(Table)
 Vue.use(TableColumn)
 Vue.use(Card)
 
+router.afterEach((route) => {
+  document.title = route.meta.title
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  router,
   render: h => h(App)
 })

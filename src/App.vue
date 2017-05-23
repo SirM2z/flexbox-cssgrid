@@ -1,21 +1,16 @@
 <template>
   <div id="app">
-    <flexbox></flexbox>
-    <css-grid></css-grid>
+    <router-view></router-view>
     <top></top>
   </div>
 </template>
 
 <script>
-import Flexbox from './components/Flexbox'
-import CssGrid from './components/CssGrid'
 import Top from './components/Top'
 
 export default {
   name: 'app',
   components: {
-    Flexbox,
-    CssGrid,
     Top
   }
 }

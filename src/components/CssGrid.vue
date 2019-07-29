@@ -1,18 +1,15 @@
 <template>
-  <div class="cssGrid">
-  </div>
+  <div class="cssGrid"></div>
 </template>
 
 <script>
 export default {
-  name: 'cssGrid',
-  data () {
-    return {
-    }
+  name: "cssGrid",
+  data() {
+    return {};
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
+<style scoped></style>

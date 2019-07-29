@@ -1,36 +1,39 @@
 <template>
   <transition
-      name="custom-classes-transition"
-      enter-active-class="animated fadeInDown"
-      leave-active-class="animated flipOutY"
-      mode="out-in">
-    <div v-show="show" @click="totop" class="top-box"><i class="el-icon-caret-top"></i></div>
+    name="custom-classes-transition"
+    enter-active-class="animated fadeInDown"
+    leave-active-class="animated flipOutY"
+    mode="out-in"
+  >
+    <div v-show="show" @click="totop" class="top-box">
+      <i class="el-icon-caret-top"></i>
+    </div>
   </transition>
 </template>
 <script>
 export default {
-  data: function () {
+  data: function() {
     return {
       show: false
-    }
+    };
   },
-  mounted () {
-    var sHeight = screen.height
-    var that = this
-    window.onscroll = function () {
+  mounted() {
+    var sHeight = screen.height;
+    var that = this;
+    window.onscroll = function() {
       if (document.body.scrollTop > sHeight) {
-        that.show = true
+        that.show = true;
       } else {
-        that.show = false
+        that.show = false;
       }
-    }
+    };
   },
   methods: {
-    totop: function () {
-      document.body.scrollTop = 0
+    totop: function() {
+      document.body.scrollTop = 0;
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -48,7 +51,7 @@ export default {
   z-index: 10;
   text-align: center;
 }
-.top-box>i {
+.top-box > i {
   color: #fff;
   font-size: 22px;
   line-height: 50px;

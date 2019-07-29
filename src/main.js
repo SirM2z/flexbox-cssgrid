@@ -1,11 +1,12 @@
-import Vue from 'vue'
-import router from './router'
-import App from './App'
-import hljs from 'highlight.js'
+import Vue from "vue";
+import router from "./router";
+import App from "./App.vue";
+import hljs from "highlight.js";
+import store from "./store";
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
-Vue.prototype.hljs = hljs
+Vue.prototype.hljs = hljs;
 
 import {
   Select,
@@ -19,27 +20,26 @@ import {
   Table,
   TableColumn,
   Card
-} from 'element-ui'
-Vue.use(Row)
-Vue.use(Col)
-Vue.use(Select)
-Vue.use(Option)
-Vue.use(Input)
-Vue.use(Form)
-Vue.use(FormItem)
-Vue.use(Input)
-Vue.use(Slider)
-Vue.use(Table)
-Vue.use(TableColumn)
-Vue.use(Card)
+} from "element-ui";
+Vue.use(Row);
+Vue.use(Col);
+Vue.use(Select);
+Vue.use(Option);
+Vue.use(Input);
+Vue.use(Form);
+Vue.use(FormItem);
+Vue.use(Input);
+Vue.use(Slider);
+Vue.use(Table);
+Vue.use(TableColumn);
+Vue.use(Card);
 
-router.afterEach((route) => {
-  document.title = route.meta.title
-})
+router.afterEach(route => {
+  document.title = route.meta.title;
+});
 
-/* eslint-disable no-new */
 new Vue({
-  el: '#app',
   router,
+  store,
   render: h => h(App)
-})
+}).$mount("#app");
